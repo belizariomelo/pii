@@ -108,7 +108,7 @@ body {
     top: 0;
     left: 0;
     width: clamp(250px, 60vw, 300px);
-    height: 40%;
+    height: 60%;
     flex-direction: column;
     background-color:  #b3c2dc;;
     color: #fff;

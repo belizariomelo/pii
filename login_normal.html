@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Smart Parking</title>
+  <link rel="stylesheet" href="../login_adm.css">
+  <link rel="stylesheet" href="../reset.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h1>Login</h1>
+      <form action="../dashboard.html" method="get">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    
+        <label for="senha">Senha</label>
+        <div class="password-wrapper">
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit">Entrar</button>
+    </form>
+      </form>
+    </div>
+    <div class="info-panel">
+      <img src="../PARK.svg" alt="Logo Smart Parking">
+      <h2>Bem vindo de volta</h2>
+      <p>Insira seus dados pessoais para acessar o sistema!</p>
+      <a href="../recuperar_login.html">
+        <button>Esqueci a senha</button>
+      </a>   
+      <a href="../dashboard_normal.html">
+        <button id="button2">Login administrador</button>
+      </a>     
+    </div>
+  </div>
+</body>
+</html>

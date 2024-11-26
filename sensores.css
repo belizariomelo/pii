@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgba(221, 232, 243, 0.849); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;  
+    margin: 0 auto;
+  }
+  .pagewrapper{
+    display: flex;
+    gap: 1px;
+    background-color: rgba(221, 232, 243, 0.849);
+    flex-direction: column;
+    height:100vh;
+  
+    
+  }
+  .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 50px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .user-info {
+    transform: translateX(20px);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.user-info .dropdown-arrow {
+    margin-left: 5px;
+    font-size: 12px;
+    color: #000;
+   
+}
+
+.user-info .dropdown-menu {
+    display: none; 
+    position: absolute;
+    transform: translateX(-30px);
+    top: 55px; 
+    left: 6px;
+    background-color: #b3c2dcf0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    min-width: 120px;
+    
+}
+
+.user-info .dropdown-menu a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #303030;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.user-info .dropdown-menu a:hover {
+    background-color: #c8d7f49d;
+    color: #383838;
+   
+}
+
+.user-info:hover .dropdown-menu {
+    display: block;
+   
+}
+
+    .logo_p{
+        font-family: "Sorts Mill Goudy", serif;
+        font-size: clamp(1rem, 1.7vw , 1.4em);
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+    }
+  
+
+
+  .sidebar {
+    display: flex; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: clamp(250px, 60vw, 300px);
+    height: 40%;
+    flex-direction: column;
+    background-color: #b3c2dc;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease; 
+    z-index: 1000;
+    border-radius: 0 0 20px 0;
+}
+
+#burger:checked ~ .sidebar {
+    transform: translateX(0); 
+    transform: translatey(13%);
+    
+}
+.sidebar .logo {
+   display: flex;
+   align-items: center;
+   margin-left: -20px;
+   color: rgb(27, 27, 27);
+   letter-spacing: 1px;
+}
+.sidebar .logo img {
+    width: 30%;
+ }
+
+.sidebar ul {
+    gap: 10px;
+    list-style: none;
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: rgb(27, 27, 27);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.sidebar_a{
+    display: flex;
+    flex-direction: column;
+
+}
+.sidebar_a a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+    text-align: left;
+    
+
+
+}
+.main-content1 header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 27px;
+    margin: 0 auto;
+}
+.main-content1 {
+    display: flex;
+    flex-direction: column;
+    
+    overflow-x: auto;
+    white-space: nowrap;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+  }
+  .user-info span{
+    font-size: clamp(1rem, 1.05vw , 1.3rem);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #383838;
+
+}
+    .logo_p{
+        font-family: "Sorts Mill Goudy", serif;
+        font-size: clamp(1rem, 1.7vw , 1.4em);
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+
+
+    }
+  
+  .user-info .dropdown-arrow {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+   margin-left: 20px;
+    padding-right: 10px;
+    height: 30px;
+}
+
+.search-container .search-icon {
+    position: relative;
+    right: 30px;
+    bottom: 9.5px;
+}
+#header_id{
+    background-color:  #b3c2dc92;
+}
+header input {
+    width: clamp(165px, 45vw, 150px);
+    background-color: #e3e6e8;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #00000080;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+header input:focus {
+    background-color: #ffffff; 
+    border-color: #e7e7e7; 
+    outline: none; 
+}
+header input::placeholder{
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 1.05vw , 1.05rem);
+    font-weight: 500;
+    color:  #00000084;
+  }
+
+  .equipamento_div{
+    letter-spacing: 0.5px;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1.3rem, 1.5vw , 1.5rem);
+    font-weight: 500;
+    padding-top: 10px;
+    color: #4E4E4E;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.74);
+    padding-bottom: 10px;  
+    padding-left: 5px;
+  
+    
+  
+
+  }
+  .main_table1{
+    display: flex;
+    
+    width: 100%;
+  }
+
+  #header_id{
+    background-color: #b3c2dc92;
+  }
+.table_main{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 1px 3.5px 0px rgba(212,212,212,1);
+    -moz-box-shadow: 1px 1px 3.5px 0px rgba(212,212,212,1);
+    box-shadow: 1px 1px 3.5px 0px rgba(212,212,212,1);
+    border-radius: 10px 10px 0 0; /* Adicionando bordas arredondadas à tabela */
+    overflow: hidden; /* Impede que as bordas arredondadas das células sejam cortadas */
+}
+    
+
+header h1{
+    letter-spacing: 0.5px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1.4rem, 2.6vw , 2.1em);
+    font-weight: 700;
+    border-radius: 10px 5px 10px 5px;
+    line-height: 31.47px;
+    text-align: center;
+    color: #4E4E4E;
+   
+
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    padding: 10px;
+    
+    background-color: #fff;
+    
+}
+
+table th,
+table td {
+    padding: 15px 8px 15px 8px;
+    border: 1px solid #2d2d2d6b;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+    line-height: 19.36px;
+    text-align: center;
+
+
+}
+
+table th {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    background-color: #ffffff;
+     }
+.tr_1{
+    background-color: #F2F2F2;
+    
+}
+.badge {
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.badge.free {
+    background-color: #1CBB8C;
+    
+}
+
+.badge.working {
+    background-color: #1CBB8C;
+}
+
+@media (min-width: 585px) {
+.equipamento_div{
+    text-align: center;
+    
+}
+}
+@media (min-width:1200px) {
+.user-info .dropdown-menu {
+    display: none; 
+    position: absolute;
+    transform: translateX(-30px);
+    top: 55px; 
+    left: 10px;
+    background-color: #b3c2dcf0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    min-width: 120px;
+
+}
+html, body {
+    
+    margin: 0; 
+    display: flex;
+    justify-content: center; 
+  
+    }
+    body {
+    max-width: 1200px; 
+    width: 100%; 
+    background-image:url(../blurred-car-parking-lot-with-many-cars-abstract-background-free-photo.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    margin-top: 30px; 
+
+    border-radius: 0 0 11px 11px; 
+    padding: 20px; 
+    }
+   
+  
+    
+    #sidebar_id {
+        display: none; 
+        height: 700px;
+        top: 50px;
+        margin-left: -431px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease; 
+        z-index: 1000; 
+   }
+.main-content1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+    #burger:checked ~ .sidebar {
+        
+        display: flex;
+        left: 50%; 
+        transform: translateX(-49.5%); 
+        
+    
+        
+    }
+    
+    #header_id2{
+        display: flex;
+        padding-top: 50px;
+        flex-direction: row;
+        
+        align-items: center;
+        gap:41%;
+    }
+    header input {
+        width: clamp(170px, 45vw, 320px);
+        background-color: #e3e6e8;
+        padding: 7px;
+        
+        border: 1px solid #00000080;
+        border-radius: 8px;
+        transition: background-color 0.3s, border-color 0.3s;
+    }
+    .search-container{
+        margin-top: 15px;
+        margin-right: -15px;
+
+    }
+    .table_main{
+        width: 90%;
+    }
+
+
+
+
+}
+@media (min-width:2000px) {
+    .user-info .dropdown-menu {
+        display: none; 
+        position: absolute;
+        transform: translateX(-30px);
+        top: 55px; 
+        left: 21px;
+        background-color: #b3c2dcf0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        min-width: 120px;
+    }
+    }
+
+  
+    

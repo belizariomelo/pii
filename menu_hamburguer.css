@@ -1,0 +1,72 @@
+.burger {
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    width: 30px;
+    height: 25px; 
+    cursor: pointer;
+    z-index: 1100; 
+}
+
+.burger span {
+    background: #232323;
+    height: 4px;
+    border-radius: 2px;
+}
+
+.burger input {
+    display: none; 
+}
+ 
+#burger {
+    display: none;
+}
+
+
+#burger + label {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 19px; 
+    cursor: pointer;
+}
+
+
+#burger + label span {
+    display: block;
+    position: absolute;
+    width: 100%; 
+    height: 2px; 
+    background: #3f3f3f; 
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+
+#burger + label span:nth-child(1) {
+    top: 0;
+}
+
+#burger + label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#burger + label span:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+#burger:checked + label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px; 
+}
+
+#burger:checked + label span:nth-child(2) {
+    opacity: 0; }
+
+#burger:checked + label span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px; 
+}
+

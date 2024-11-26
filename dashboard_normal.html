@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="../dashboard_normal.css">
+      <link rel="stylesheet" href="../reset.css">
+      <link rel="stylesheet" href="../menu_hamburguer.css">
+   </head>
+   <body>
+      <div class="pagewrapper" id="pagewrapper_id">
+         <div class="main-content" id="main-content_id">
+            <header class="header" id="header_id">
+               <input type="checkbox" id="burger">
+               <label class="burger1" for="burger">
+               <span></span>
+               <span></span>
+               <span></span>
+               </label>
+               <div class="user-info">
+                  <span>Pedro</span>
+                  <span class="dropdown-arrow">▼</span>
+                  <div class="dropdown-menu">
+                      <a href="../conta.html">Meu perfil</a>
+                      <a href="../index.html">Sair da conta </a>
+                  </div>
+              </div>            
+               <nav class="sidebar" id="sidebar_id">
+                  <div class="logo">
+                     <img src="../PARK.svg" alt="">
+                     <p class="logo_p">Rotalog Brasil</p>
+                  </div>
+                  <ul>
+                     <li class="sidebar_a">
+                        <a href="../dashboard_normal.html"><img src="../Performance Macbook.svg" alt="Dashboard Icon"> Dashboard</a>
+                     </li>
+                    
+                     <li class="sidebar_a">
+                        <a href="../conta.html"><img src="../User.svg" alt="Account Icon"> Conta</a>
+                     </li>
+                     <li class="sidebar_a">
+                        <a href="../suporte.html"><img src="../Service.svg" alt="Support Icon"> Suporte</a>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+         </div>
+         <h2 id="dashboard_id" class="dash">Dashboard</h2>
+         <div class="cards" id="cards_id2">
+            <div class="card" id="card_id"> 
+               <h3>Vagas de carro</h3>
+               <p><strong>30</strong></p>
+            </div>
+            <div class="card card2" id="card_id"> 
+               <h3>Vagas de moto</h3>
+               <p><strong>50</strong></p>
+            </div>
+            <div class="card card3" id="card_id">
+               <h3>Vagas para idoso</h3>
+               <p><strong>20</strong></p>
+            </div>
+            <div class="card card4" id="card_id">
+               <h3>Vagas para PCD</h3>
+               <p><strong>05</strong></p>
+            </div>
+         </div>
+         <div class="chart-and-ratings" id="chart-and-ratings">
+            <div class="chart">
+                <figure id="figure_id">
+               <img src="../grafico.svg" alt="Gráfico de horários de pico">
+            </figure>
+            </div>
+            <div class="ratings" id="ratings_id2" >
+               <h3 class="parking_h3">Avaliações do estacionamento</h3>
+               <div class="ratings-grid" id="ratings_id">
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">ÓTIMO</h3>
+                     <p><strong>58</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3" >
+                     <h3 class="h3_rating">BOM</h3>
+                     <p><strong>40</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">MÉDIO</h3>
+                     <p><strong>60</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">RUIM</h3>
+                     <p><strong>20</strong></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="appointments" id="appointments_1">
+
+   <a href="#modal" class="report-button">Novo Agendamento</a>
+   <h3>Agendamentos</h3>
+   <table id="table_id">
+      <thead>
+         <tr class="tr_table">
+            <th>Nome</th>
+            <th>Tempo</th>
+            <th>Vaga Escolhida</th>
+            <th>Data Agendada</th>
+            <th>Placa Veículo</th>
+            <th>Status</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr class="tr_table1">
+            <td id="main_name_table">Renan Machado</td>
+            <td>2 horas</td>
+            <td>A5</td>
+            <td>15/05/2024</td>
+            <td>NQZ-15222</td>
+            <td><span class="status-agendado">Agendado</span></td>
+         </tr>
+      </tbody>
+      <tbody>
+        <tr class="tr_table1">
+           <td id="main_name_table">Renan Machado</td>
+           <td>2 horas</td>
+           <td>A5</td>
+           <td>15/05/2024</td>
+           <td>NQZ-15222</td>
+           <td><span class="status-agendado">Agendado</span></td>
+        </tr>
+     </tbody>
+     <tbody>
+        <tr class="tr_table1">
+           <td id="main_name_table">Renan Machado</td>
+           <td>2 horas</td>
+           <td>A5</td>
+           <td>15/05/2024</td>
+           <td>NQZ-15222</td>
+           <td><span class="status-agendado">Agendado</span></td>
+        </tr>
+     </tbody>
+     <tbody>
+        <tr class="tr_table1">
+           <td id="main_name_table">Renan Machado</td>
+           <td>2 horas</td>
+           <td>A5</td>
+           <td>15/05/2024</td>
+           <td>NQZ-15222</td>
+           <td><span class="status-agendado">Agendado</span></td>
+        </tr>
+     </tbody>
+   </table>
+</section>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+       <a href="#appointments_1" class="close-button">✕</a>
+       <h2>Novo Agendamento</h2>
+       <form>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Digite seu nome">
+ 
+          <label for="placa">Placa do veículo</label>
+          <input type="text" id="placa" placeholder="Digite a placa do veículo">
+ 
+          <label for="identificador">Nº identificador</label>
+          <input type="text" id="identificador" placeholder="Digite seu número de identificação">
+         
+ 
+          <label for="tipo-veiculo">Tipo Veículo</label>
+          <div class="radio-group">
+             <label><input type="radio" name="tipo-veiculo" value="carro"> Carro</label>
+             <label><input type="radio" name="tipo-veiculo" value="moto" checked> Moto</label>
+          </div>
+ 
+          <label for="tempo">Tempo</label>
+          <select id="tempo">
+             <option>Selecione</option>
+             <option>1 hora</option>
+             <option>2 horas</option>
+             <option>3 horas</option>
+          </select>
+ 
+          <label class="choose">Escolha sua Vaga</label>
+          <div class="vaga-container">
+            <input type="radio" id="vaga-1" name="vaga" class="vaga-input">
+            <label for="vaga-1" class="vaga">A0</label>
+        
+            <input type="radio" id="vaga-2" name="vaga" class="vaga-input">
+            <label for="vaga-2" class="vaga">A1</label>
+        
+            <input type="radio" id="vaga-3" name="vaga" class="vaga-input">
+            <label for="vaga-3" class="vaga">A2</label>
+        
+            <input type="radio" id="vaga-4" name="vaga" class="vaga-input">
+            <label for="vaga-4" class="vaga">A3</label>
+        
+            <input type="radio" id="vaga-5" name="vaga" class="vaga-input">
+            <label for="vaga-5" class="vaga">A4</label>
+        
+            <input type="radio" id="vaga-6" name="vaga" class="vaga-input">
+            <label for="vaga-6" class="vaga">A5</label>
+        
+            <input type="radio" id="vaga-7" name="vaga" class="vaga-input">
+            <label for="vaga-7" class="vaga">A6</label>
+        
+            <input type="radio" id="vaga-8" name="vaga" class="vaga-input">
+            <label for="vaga-8" class="vaga">A7</label>
+        
+            <input type="radio" id="vaga-9" name="vaga" class="vaga-input">
+            <label for="vaga-9" class="vaga">A8</label>
+        
+            <input type="radio" id="vaga-10" name="vaga" class="vaga-input">
+            <label for="vaga-10" class="vaga">A9</label>
+
+            <input type="radio" id="vaga-11" name="vaga" class="vaga-input">
+            <label for="vaga-11" class="vaga">A10</label>
+            <input type="radio" id="vaga-12" name="vaga" class="vaga-input">
+            <label for="vaga-12" class="vaga">A11</label>
+        </div>
+        
+ 
+          <label>Data Do Agendamento</label>
+          <div class="date-group">
+             <select>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+             </select>
+             <select>
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+             </select>
+             <select>
+                <option>2024</option>
+             </select>
+          </div>
+ 
+          <div class="buttons">
+            <a href="#appointments_1" class="cancelar">Cancelar</a>
+            <a href="#close-modal" class="reservar">Reservar</a> 
+        </div>
+       </form>
+    </div>
+ </div>
+ 
+
+      </div>
+      </div>
+   </body>
+</html>

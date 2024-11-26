@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta</title>
+  <link rel="stylesheet" href="../conta.css">
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../menu_hamburguer.css">
+</head>
+<body>
+   
+  <div class="pagewrapper" id="pagewrapper_id">
+    <div class="main-content" id="main-content_id">
+      <header class="header" id="header_id">
+        <input type="checkbox" id="burger">
+        <label class="burger1" for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="user-info">
+          <span>Pedro</span>
+          <span class="dropdown-arrow">▼</span>
+          <div class="dropdown-menu">
+            <a href="../conta.html">Meu perfil</a>
+            <a href="../index.html">Sair da conta </a>
+          </div>
+        </div>
+        <nav class="sidebar" id="sidebar_id">
+          <div class="logo">
+            <img src="../PARK.svg" alt="">
+            <p class="logo_p">Rotalog Brasil</p>
+          </div>
+          <ul>
+            <li class="sidebar_a">
+              <a href="../dashboard.html"><img src="../Performance Macbook.svg" alt="Dashboard Icon"> Dashboard</a>
+            </li>
+            <li class="sidebar_a">
+              <a href="../sensores.html"><img src="../sensores.svg" alt="Sensor Icon"> Verif. Sensores</a>
+            </li>
+            <li class="sidebar_a">
+              <a href="../conta.html"><img src="../User.svg" alt="Account Icon"> Conta</a>
+            </li>
+            <li class="sidebar_a">
+              <a href="../suporte.html"><img src="../Service.svg" alt="Support Icon"> Suporte</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class=" main_2">
+        <div class="menu_dash">
+            <h2>Conta</h2>
+            <p>Dashboard / Conta</p>
+        </div>
+        <section class="profile-section">
+          <div class="profile-card">
+            <img class="profile-picture" src="../perfil.svg" alt="Foto de perfil">
+            <div>
+                <p><strong>Usuário:</strong></p>
+                <span>Pedro</span>
+            </div>
+            <div>
+                <p><strong>Número Identificador: </strong></p>
+                <span>125963.25</span>
+            </div>
+            <div>
+                <p><strong>Cargo: </strong></p>
+                <span>CEO</span>
+            </div>
+            <div>
+                <p><strong>Endereço: </strong></p>
+                <span>Avenida qualquer, bairro, N 10</span>
+            </div>
+            
+          </div>
+        <div class="favorites_2">
+          <div class="favorites">
+            <h2>Favoritos</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome do Estacionamento</th>
+                  <th>Visitas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <td>Estacione Fácil</td>
+                  <td>10</td>
+                </tr>
+                <tr class="fav_2">
+                  <td>Estacione Fácil</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Estacione Fácil</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="password-section">
+            <h2 class="section-title">Alterar senha</h2>
+            <form class="password-form">
+                <div class="form-group">
+                    <label for="current-password">Senha atual</label>
+                    <div class="input-wrapper">
+                        <input
+                            type="password"
+                            id="current-password"
+                            name="current-password"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                        <img src="../eye.svg" alt="Mostrar senha" class="input-icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Nova senha</label>
+                    <div class="input-wrapper">
+                        <input
+                            type="password"
+                            id="new-password"
+                            name="new-password"
+                            placeholder="Digite sua nova senha"
+                            required
+                        >
+                        <img src="../eye.svg" alt="Mostrar senha" class="input-icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirme a nova senha</label>
+                    <div class="input-wrapper">
+                        <input
+                            type="password"
+                            id="confirm-password"
+                            name="confirm-password"
+                            placeholder="Digite sua senha novamente"
+                            required
+                        >
+                        <img src="../eye.svg" alt="Mostrar senha" class="input-icon">
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Alterar senha</button>
+            </form>
+        </div>
+    </div>
+        </section>
+
+      
+          
+      </main>
+    </div>
+  </div>
+</body>
+</html>

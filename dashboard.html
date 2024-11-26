@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Dashboard</title>
+      <link rel="stylesheet" href="../dashboard_adm.css">
+      <link rel="stylesheet" href="../reset.css">
+      <link rel="stylesheet" href="../menu_hamburguer.css">
+   </head>
+   <body>
+      <div class="pagewrapper" id="pagewrapper_id">
+         <div class="main-content" id="main-content_id">
+            <header class="header" id="header_id">
+               <input type="checkbox" id="burger">
+               <label class="burger1" for="burger">
+               <span></span>
+               <span></span>
+               <span></span>
+               </label>
+               <div class="user-info">
+                  <span>Pedro</span>
+                  <span class="dropdown-arrow">▼</span>
+                  <div class="dropdown-menu">
+                     <a href="../conta.html">Meu perfil</a>
+                      <a href="../index.html">Sair da conta </a>
+                  </div>
+              </div>            
+               <nav class="sidebar" id="sidebar_id">
+                  <div class="logo">
+                     <img src="../PARK.svg" alt="">
+                     <p class="logo_p">Rotalog Brasil</p>
+                  </div>
+                  <ul>
+                     <li class="sidebar_a">
+                        <a href="../dashboard.html"><img src="../Performance Macbook.svg" alt="Dashboard Icon"> Dashboard</a>
+                     </li>
+                     <li class="sidebar_a">
+                        <a href="../sensores.svg"><img src="../sensores.svg" alt="Sensor Icon"> Verif. Sensores</a>
+                    </li>
+                     <li class="sidebar_a">
+                        <a href="../conta.html"><img src="../User.svg" alt="Account Icon"> Conta</a>
+                     </li>
+                     <li class="sidebar_a">
+                        <a href="../suporte.html"><img src="../Service.svg" alt="Support Icon"> Suporte</a>
+                     </li>
+                  </ul>
+               </nav>
+            </header>
+         </div>
+         <h2 id="dashboard_id" class="dash">Dashboard</h2>
+         <div class="cards" id="cards_id2">
+            <div class="card" id="card_id"> 
+               <h3>Vagas de carro</h3>
+               <p><strong>30</strong></p>
+            </div>
+            <div class="card card2" id="card_id"> 
+               <h3>Vagas de moto</h3>
+               <p><strong>50</strong></p>
+            </div>
+            <div class="card card3" id="card_id">
+               <h3>Vagas para idoso</h3>
+               <p><strong>20</strong></p>
+            </div>
+            <div class="card card4" id="card_id">
+               <h3>Vagas para PCD</h3>
+               <p><strong>05</strong></p>
+            </div>
+         </div>
+         <div class="chart-and-ratings" id="chart-and-ratings">
+            <div class="chart">
+                <figure id="figure_id">
+               <img src="../grafico.svg" alt="Gráfico de horários de pico">
+            </figure>
+            </div>
+            <div class="ratings" id="ratings_id2" >
+               <h3 class="parking_h3">Avaliações do estacionamento</h3>
+               <div class="ratings-grid" id="ratings_id">
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">ÓTIMO</h3>
+                     <p><strong>58</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3" >
+                     <h3 class="h3_rating">BOM</h3>
+                     <p><strong>40</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">MÉDIO</h3>
+                     <p><strong>60</strong></p>
+                  </div>
+                  <div class="ratings-grid_h3">
+                     <h3 class="h3_rating">RUIM</h3>
+                     <p><strong>20</strong></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <section class="appointments" id="appointments_1">
+         <button class="report-button">Gerar relatório</button>
+         <h3>Agendamentos</h3>
+         <table id="table_id">
+            <thead>
+               <tr class="tr_table">
+                  <th>Nome</th>
+                  <th>Tempo</th>
+                  <th>Vaga Escolhida</th>
+                  <th>Data Agendada</th>
+                  <th>Placa Veículo</th>
+                  <th>Status</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="tr_table1">
+                  <td id="main_name_table">Renan Machado</td>
+                  <td>2 horas</td>
+                  <td>A5</td>
+                  <td>15/05/2024</td>
+                  <td>NQZ-15222</td>
+                  <td><span class="status-agendado">Agendado</span></td>
+               </tr>
+               <tr id="tr_table2">
+                  <td id="main_name_table">Renan Machado</td>
+                  <td>3 horas</td>
+                  <td>A5</td>
+                  <td>01/06/2024</td>
+                  <td>NQZ-15222</td>
+                  <td><span class="status-agendado">Agendado</span></td>
+               </tr>
+               <tr class="tr_table3">
+                  <td id="main_name_table">Renan Machado</td>
+                  <td>3 horas</td>
+                  <td>A5</td>
+                  <td>18/06/2024</td>
+                  <td>NQZ-15222</td>
+                  <td><span class="status-agendado">Agendado</span></td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+      </div>
+      </div>
+   </body>
+</html>
